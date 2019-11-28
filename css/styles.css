@@ -1,0 +1,212 @@
+/*
+@autor: iñigo 
+@version: 1.0 
+@tags: css 
+@licencia: mit
+
+*/
+@import url("reset.css");
+@import url("normalice.css");
+
+* {
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: rgb(0, 30, 197);
+    color: white;
+    max-width: 1024;
+    margin: auto;
+
+}
+
+footer {
+    color: white;
+    max-width: 1024;
+    margin: auto;
+}
+
+.wrapperMain h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-align: center;
+}
+
+/*WRAPPERS*/
+
+
+.wrapperMain {
+
+    margin: auto;
+    max-width: 1024px;
+    background-color: #c9d6d388;
+    min-height: 80vh;
+    border: 2px solid blue;
+    border-radius: 5px;
+
+}
+
+
+.wrapperNav {
+    background-color: #1a73e8;
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.wrapperFooter {
+    background-color: #1a73e8;
+    min-height: 10vh;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid blue;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.poster {
+    position: relative;
+    margin: 10px;
+    min-height: 70vh;
+    width: 48%;
+    border: 2px solid rgb(255, 255, 255);
+    background-image: url('/img/hipster-bn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/************Reglas para el contenido del póster, especificando el contenedor*/
+
+.poster h2 {
+
+    color: yellow;
+    text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+    text-transform: uppercase;
+    font-family: "Ealing";
+    font-size: 4.2em;
+
+
+}
+
+.poster h3 {
+    color: yellow;
+    text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+    font-family: "Ealing";
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.contenedor-quote {
+    display: inline-block;
+    background-color: rgba(255, 255, 0, 0.411);
+    position: relative;
+    width: 90%;
+    left: 20px;
+    top: 50px;
+
+
+}
+
+.poster blockquote {
+    font-family: "RockwellNovaW15-Regular";
+    padding: 10px 50px 10px 5px;
+    font-size: 1.7em;
+}
+
+.poster footer {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    color: black;
+    border-top: 10px solid rgba(255, 255, 0, 0.411);
+    border-radius: 70% 70% 0 0;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.parrafos-footer {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.imagenes-footer {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.imagen-emakunde {
+    height: 40px;
+    width: 64px;
+    position: relative;
+    bottom: 68px;
+    left:214spx;
+
+
+}
+
+.imagen-gv {
+    height:18px;
+    width:115px;
+    position:relative;
+    left:130px;
+    bottom:20px;
+}
+
+.morado {
+    color: purple;
+}
+
+.poster footer p {
+    font-family: "RockwellNovaW15-Regular";
+    font-size: 0.7em;
+    position: relative;
+    margin-right:145px;
+    margin-top:24px;
+    text-align: justify;
+
+}
+
+.poster footer p.morado {
+    font-family: "Ealing";
+    text-transform: uppercase;
+    font-size: 1em;
+    position: relative;
+    margin-left:34px;
+    margin-top:10px;
+
+
+}
+
+
+/**Media query para pantallas pequeñas**/
+
+@media screen and (max-width:576px) {
+    .container {
+        display: block;
+    }
+}
